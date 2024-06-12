@@ -1,0 +1,49 @@
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5); /* semi-transparent background */
+  border-radius: 50%; /* circular buttons */
+}
+
+.next {
+  right: 10px; /* position from right */
+  border-radius: 50%; /* circular buttons */
+}
+
+.prev {
+  left: 10px; /* position from left */
+  border-radius: 50%; /* circular buttons */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8); /* darker on hover */
+}
+
+.prev:focus, .next:focus {
+  outline: none; /* remove default focus outline */
+}
